@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acolhe+</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="acolhe">
+            <a href="#inicio" class="logo">Acolhe<span>+</span></a>
+
+            <button class="menu-botao" id="menu-botao" aria-label="Abrir menu" aria-expanded="false">
+
+            </button>
+
+            <ul class="link-navegacao" id="link-navegacao">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#denuncia">Denunciar</a></li>
+                <li><a href="#apoio">Preciso de ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="secao-inicial" id="inicio">
+            <div class="conteudo-inicial">
+                <span class="selo">Um espaço de acolhimento e respeito</span>
+
+                <h1>A sua voz merece ser ouvida.</h1>
+
+                <p>
+                    O bullying não deve fazer parte da sua história.
+                    Estamos aqui para ouvir, apoiar e ajudar.
+                    Você não precisa enfrentar tudo sozinho(a).
+                </p>
+
+                <div class="botoes-inicial">
+                    <a href="#denuncia" class="botao botao-principal">
+                        Fazer uma denúncia
+                    </a>
+
+                    <a href="#sobre" class="botao botao-contorno">
+                        Conhecer o projeto
+                    </a>
+                </div>
+            </div>
+
+            <div class="imagem-inicial">
+                <div class="image-card">
+                    <img src="/Logo/Acolhe+.png" alt="Logo do projeto Acolhe+" class="logo-destaque">
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-nos section" id="sobre">
+            <div class="titulo-secao">
+                <span class="selo">Sobre o projeto</span>
+                <h2>O que é o Acolhe+?</h2>
+                <p>
+                    Uma plataforma criada para ajudar no combate ao bullying
+                    e promover um ambiente mais seguro e respeitoso.
+                </p>
+            </div>
+
+            <div class="cards">
+
+                <article class="cartao">
+                    <div class="cartao-icone">♡</div>
+                    <h3>Acolhimento</h3>
+                    <p>
+                        Oferecemos um espaço onde as pessoas podem
+                        procurar orientação e apoio.
+                    </p>
+                </article>
+
+                <article class="cartao">
+                    <div class="cartao-icone">◎</div>
+                    <h3>Prevenção</h3>
+                    <p>
+                        Incentivamos o respeito, a empatia e a
+                        conscientização sobre o bullying.
+                    </p>
+                </article>
+
+                <article class="cartao">
+                    <div class="cartao-icone">✓</div>
+                    <h3>Proteção</h3>
+                    <p>
+                        Orientamos sobre canais oficiais para que situações
+                        de bullying possam ser comunicadas e acompanhadas.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="secao-denuncia section" id="denuncia">
+            <div class="titulo-secao">
+                <span class="selo">Canais oficiais e orientação</span>
+                <h2>Quer relatar o que aconteceu?</h2>
+                <p>
+                    Organize o relato abaixo e encaminhe pelos canais oficiais
+                    competentes, como o Disque 100 (Direitos Humanos).
+                </p>
+            </div>
+
+            <form id="formulario-denuncia" class="formulario-denuncia">
+
+                <div class="grupo-campo">
+                    <label for="tipo">Tipo de situação</label>
+
+                    <select id="tipo" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Verbal">Bullying verbal</option>
+                        <option value="Físico">Bullying físico</option>
+                        <option value="Psicológico">Bullying psicológico</option>
+                        <option value="Virtual">Cyberbullying</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="local">Onde ocorreu (opcional)</label>
+                    <input type="text" id="local" placeholder="Ex.: escola, trajeto, rede social...">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="descricao">Conte o que aconteceu</label>
+
+                    <textarea id="descricao" rows="5" placeholder="Escreva aqui o que aconteceu..." required></textarea>
+                </div>
+
+                <div class="grupo-campo grupo-checkbox">
+                    <input type="checkbox" id="anonimo" checked>
+                    <label for="anonimo">Quero manter a minha identidade anônima no relato.</label>
+                </div>
+
+                <div class="grupo-campo" id="campo-identificacao" hidden>
+                    <label for="nome">Nome ou contato (opcional)</label>
+                    <input type="text" id="nome" placeholder="Seu nome">
+                </div>
+
+                <div class="acoes-formulario">
+                    <button type="submit" class="botao botao-principal botao-enviar">
+                        Preparar e copiar relato
+                    </button>
+
+                    <a
+                        href="https://www.gov.br/pt-br/servicos/denunciar-violacao-de-direitos-humanos"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="botao botao-contorno link-canal-oficial"
+                    >
+                        Abrir canal oficial (Disque 100 / Gov.br)
+                    </a>
+                </div>
+
+                <p class="aviso-formulario">
+                    Para registrar formalmente, utilize os canais oficiais: ligue gratuitamente para
+                    <strong>100</strong> (24h) ou acesse o portal do <strong>Disque 100 no Gov.br</strong>.
+                    Em casos de crime virtual ou emergência, procure a Polícia Civil / Delegacia Virtual ou ligue <strong>190</strong>.
+                </p>
+
+                <div id="mensagem-formulario" role="status" aria-live="polite"></div>
+
+            </form>
+        </section>
+
+        <section class="secao-apoio section" id="apoio">
+            <div class="conteudo-apoio">
+                <span class="selo">Você não está sozinho(a)</span>
+
+                <h2>Precisar de ajuda não é fraqueza.</h2>
+
+                <p>
+                    Sofrer bullying pode ser muito difícil.
+                    Conversar com alguém de confiança pode ser o primeiro passo.
+                    Procure um familiar, professor, psicólogo ou outro
+                    profissional que possa ajudar.
+                </p>
+
+                <p>
+                    Se você estiver em perigo imediato ou pensando em
+                    se machucar, procure ajuda presencial imediatamente
+                    e entre em contato com os serviços de emergência da sua região.
+                </p>
+
+                <a href="#inicio" class="botao botao-principal">
+                    Voltar ao início
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Acolhe<span>+</span></h2>
+
+        <p>Mais respeito, mais empatia, mais humanidade.</p>
+
+        <p class="copyright">
+            © 2026 Acolhe+ | Projeto de orientação e combate ao bullying.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
